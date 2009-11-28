@@ -3,7 +3,7 @@
 PROG=$0
 PROG_DIR=$(cd `dirname $0`; pwd)
 test -h $0 && PROG=$(readlink $0)
-PREFIX=$(dirname $PROG_DIR)
+PREFIX=$(dirname $(dirname $PROG))
 
 #### Fill in values for these variables ####
 REL_NAME=faxien
